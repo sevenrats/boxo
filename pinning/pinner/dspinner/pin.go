@@ -724,12 +724,14 @@ func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexe
 		v, err := index.Search(ctx, s)
 		if err != nil {
 			out <- ipfspinner.StreamedCid{Err: err}
+			return
 		}
 		c, err := cid.Parse(v[0])
 		if len(v) == 1 {
 			select {
 			case <-ctx.Done():
 				out <- ipfspinner.StreamedCid{Err: err}
+				return
 			case out <- ipfspinner.StreamedCid{C: c}:
 			}
 		}			
