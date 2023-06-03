@@ -62,5 +62,5 @@ type PinAPI interface {
 	Update(ctx context.Context, from path.Path, to path.Path, opts ...options.PinUpdateOption) error
 
 	// Verify verifies the integrity of pinned objects
-	Verify(context.Context) (<-chan PinStatus, error)
+	Verify(context.Context, string) (<-chan PinStatus, error)
 }
