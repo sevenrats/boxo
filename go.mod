@@ -1,4 +1,4 @@
-module github.com/ipfs/boxo
+module github.com/sevenrats/boxo
 
 go 1.19
 
