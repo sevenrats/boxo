@@ -726,7 +726,7 @@ func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexe
 			select {
 			case <-ctx.Done():
 				out <- ipfspinner.StreamedCid{Err: err}
-			case out <- ipfspinner.StreamedCid{C: v[0]}:
+			case out <- ipfspinner.StreamedCid{C: cid.Parse(v[0])}:
 			}
 		}			
 	}()
