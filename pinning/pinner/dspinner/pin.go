@@ -721,7 +721,7 @@ func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexe
 
 		p.lock.RLock()
 		defer p.lock.RUnlock()
-		v, _ = index.Search(ctx, s)
+		v, _ := index.Search(ctx, s)
 		if len(v) == 1 {
 			select {
 			case <-ctx.Done():
