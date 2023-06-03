@@ -674,7 +674,12 @@ func (p *pinner) RecursiveKeys(ctx context.Context) <-chan ipfspinner.StreamedCi
 	return p.streamIndex(ctx, p.cidRIndex)
 }
 
-func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan ipfspinner.StreamedCid {
+// RecursiveKeys returns a slice containing the recursively pinned keys
+func (p *pinner) RecursiveKeysFromString(ctx context.Context, s string) <-chan ipfspinner.StreamedCid {
+	return p.streamIndex(ctx, p.cidRIndex, s)
+}
+
+func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer, s *string) <-chan ipfspinner.StreamedCid {
 	out := make(chan ipfspinner.StreamedCid)
 
 	go func() {
@@ -684,6 +689,23 @@ func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan 
 		defer p.lock.RUnlock()
 
 		cidSet := cid.NewSet()
+
+		if s != nil {
+			c, err := cid.Cast([]byte(s))
+			v, _ = index.Search(c)
+			if err != nil {
+				out <- ipfspinner.StreamedCid{Err: err}
+				return false
+			}
+			if len(v) == 1 {
+				select {
+				case <-ctx.Done():
+					return false
+				case out <- ipfspinner.StreamedCid{C: v[0].Key}:
+				}
+				return true
+			}			
+		}
 
 		err := index.ForEach(ctx, "", func(key, value string) bool {
 			c, err := cid.Cast([]byte(key))
