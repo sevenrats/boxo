@@ -124,6 +124,9 @@ type Pinner interface {
 	// RecursiveKeys returns all recursively pinned cids
 	RecursiveKeys(ctx context.Context) <-chan StreamedCid
 
+	// RecursiveKeysFromString returns all recursively pinned cids that match Search key
+	RecursiveKeysFromString(ctx context.Context, s string) <-chan StreamedCid
+
 	// InternalPins returns all cids kept pinned for the internal state of the
 	// pinner
 	InternalPins(ctx context.Context) <-chan StreamedCid
