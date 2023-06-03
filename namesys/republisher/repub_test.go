@@ -16,16 +16,16 @@ import (
 	peer "github.com/libp2p/go-libp2p/core/peer"
 	routing "github.com/libp2p/go-libp2p/core/routing"
 
-	opts "github.com/ipfs/boxo/coreiface/options/namesys"
-	"github.com/ipfs/boxo/ipns"
-	ipns_pb "github.com/ipfs/boxo/ipns/pb"
-	"github.com/ipfs/boxo/path"
+	opts "github.com/sevenrats/boxo/coreiface/options/namesys"
+	"github.com/sevenrats/boxo/ipns"
+	ipns_pb "github.com/sevenrats/boxo/ipns/pb"
+	"github.com/sevenrats/boxo/path"
 	ds "github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
 
-	keystore "github.com/ipfs/boxo/keystore"
-	"github.com/ipfs/boxo/namesys"
-	. "github.com/ipfs/boxo/namesys/republisher"
+	keystore "github.com/sevenrats/boxo/keystore"
+	"github.com/sevenrats/boxo/namesys"
+	. "github.com/sevenrats/boxo/namesys/republisher"
 )
 
 type mockNode struct {

@@ -3,10 +3,10 @@ package iface
 import (
 	"context"
 
-	"github.com/ipfs/boxo/coreiface/options"
-	path "github.com/ipfs/boxo/coreiface/path"
+	"github.com/sevenrats/boxo/coreiface/options"
+	path "github.com/sevenrats/boxo/coreiface/path"
 
-	"github.com/ipfs/boxo/files"
+	"github.com/sevenrats/boxo/files"
 	"github.com/ipfs/go-cid"
 )
 

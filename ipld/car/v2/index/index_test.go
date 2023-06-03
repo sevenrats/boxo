@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1/util"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1/util"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/multiformats/go-multicodec"
 	"github.com/multiformats/go-varint"

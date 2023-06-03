@@ -7,12 +7,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ipfs/boxo/ipld/car/v2/index"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
+	"github.com/sevenrats/boxo/ipld/car/v2/index"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ipfs/boxo/ipld/merkledag"
-	dstest "github.com/ipfs/boxo/ipld/merkledag/test"
+	"github.com/sevenrats/boxo/ipld/merkledag"
+	dstest "github.com/sevenrats/boxo/ipld/merkledag/test"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
 	"github.com/stretchr/testify/assert"

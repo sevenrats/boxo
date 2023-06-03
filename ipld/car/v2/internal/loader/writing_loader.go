@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/ipfs/boxo/ipld/car/v2/index"
+	"github.com/sevenrats/boxo/ipld/car/v2/index"
 	"github.com/ipfs/go-cid"
 	"github.com/ipld/go-ipld-prime"
 	"github.com/ipld/go-ipld-prime/linking"

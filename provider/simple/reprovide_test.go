@@ -19,15 +19,15 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	mh "github.com/multiformats/go-multihash"
 
-	bsrv "github.com/ipfs/boxo/blockservice"
-	blockstore "github.com/ipfs/boxo/blockstore"
-	offline "github.com/ipfs/boxo/exchange/offline"
-	bsfetcher "github.com/ipfs/boxo/fetcher/impl/blockservice"
-	"github.com/ipfs/boxo/internal/test"
-	pin "github.com/ipfs/boxo/pinning/pinner"
-	mock "github.com/ipfs/boxo/routing/mock"
+	bsrv "github.com/sevenrats/boxo/blockservice"
+	blockstore "github.com/sevenrats/boxo/blockstore"
+	offline "github.com/sevenrats/boxo/exchange/offline"
+	bsfetcher "github.com/sevenrats/boxo/fetcher/impl/blockservice"
+	"github.com/sevenrats/boxo/internal/test"
+	pin "github.com/sevenrats/boxo/pinning/pinner"
+	mock "github.com/sevenrats/boxo/routing/mock"
 
-	. "github.com/ipfs/boxo/provider/simple"
+	. "github.com/sevenrats/boxo/provider/simple"
 )
 
 func setupRouting(t *testing.T) (clA, clB mock.Client, idA, idB peer.ID) {

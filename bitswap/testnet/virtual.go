@@ -8,10 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	bsmsg "github.com/ipfs/boxo/bitswap/message"
-	bsnet "github.com/ipfs/boxo/bitswap/network"
+	bsmsg "github.com/sevenrats/boxo/bitswap/message"
+	bsnet "github.com/sevenrats/boxo/bitswap/network"
 
-	mockrouting "github.com/ipfs/boxo/routing/mock"
+	mockrouting "github.com/sevenrats/boxo/routing/mock"
 	cid "github.com/ipfs/go-cid"
 	delay "github.com/ipfs/go-ipfs-delay"
 

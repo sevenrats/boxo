@@ -23,7 +23,7 @@ The following emojis are used to highlight certain changes:
 ## [0.8.0] - 2023-04-05
 ### Added
 
-- ✨ Migrated repositories into Boxo (https://github.com/ipfs/boxo/pull/220)
+- ✨ Migrated repositories into Boxo (https://github.com/sevenrats/boxo/pull/220)
   - github.com/ipfs/interface-go-ipfs-core => ./coreiface
   - github.com/ipfs/go-pinning-service-http-client => ./pinning/remote/client
   - github.com/ipfs/go-path => ./path
@@ -48,7 +48,7 @@ The following emojis are used to highlight certain changes:
   - github.com/ipfs/go-unixfs => ./ipld/unixfs
   - github.com/ipfs/go-merkledag => ./ipld/merkledag
   - github.com/ipld/go-car => ./ipld/car
-- ✨ Added a migration tool to aid in migrating from the migrated repositories to Boxo, see the documentation here: https://github.com/ipfs/boxo/blob/main/README.md#migrating-to-boxo (https://github.com/ipfs/boxo/pull/226)
+- ✨ Added a migration tool to aid in migrating from the migrated repositories to Boxo, see the documentation here: https://github.com/sevenrats/boxo/blob/main/README.md#migrating-to-boxo (https://github.com/sevenrats/boxo/pull/226)
   - Added a check to ensure the migration tool is only run in a Git repository (with an optional override flag)
 - ✨ Added tracing and metrics to the refactored gateway for its IPFS backend
 
@@ -56,8 +56,8 @@ The following emojis are used to highlight certain changes:
 ### Changed
 
 - Removed a mention of "bitswap" in blockservice debug logs
-- Changed the Bitswap message package from "bitswap.message.pb" to "bitswap.message.v1.pb" to avoid protobuf panics due to duplicate registration with [go-bitswap](https://github.com/ipfs/go-bitswap) (https://github.com/ipfs/boxo/pull/212)
-- ✨ Remove a busyloop in blockservice getBlocks by removing batching when caching (https://github.com/ipfs/boxo/pull/232)
+- Changed the Bitswap message package from "bitswap.message.pb" to "bitswap.message.v1.pb" to avoid protobuf panics due to duplicate registration with [go-bitswap](https://github.com/ipfs/go-bitswap) (https://github.com/sevenrats/boxo/pull/212)
+- ✨ Remove a busyloop in blockservice getBlocks by removing batching when caching (https://github.com/sevenrats/boxo/pull/232)
 
 ### Deprecated
 
@@ -69,9 +69,9 @@ None
 
 ### Fixed
 
-- Ensure dag-cbor/json codecs are registered in the gateway handler (https://github.com/ipfs/boxo/pull/223)
-- ✨ Refactor the Gateway API to operate on higher level semantics (https://github.com/ipfs/boxo/pull/176)
-- Fixed a panic in the gateway handler when returning errors (https://github.com/ipfs/boxo/pull/255)
+- Ensure dag-cbor/json codecs are registered in the gateway handler (https://github.com/sevenrats/boxo/pull/223)
+- ✨ Refactor the Gateway API to operate on higher level semantics (https://github.com/sevenrats/boxo/pull/176)
+- Fixed a panic in the gateway handler when returning errors (https://github.com/sevenrats/boxo/pull/255)
 
 ### Security
 

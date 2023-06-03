@@ -8,7 +8,7 @@ import (
 	"io"
 	"testing"
 
-	car "github.com/ipfs/boxo/ipld/car"
+	car "github.com/sevenrats/boxo/ipld/car"
 )
 
 func FuzzCarReader(f *testing.F) {

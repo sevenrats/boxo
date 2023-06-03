@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	ipath "github.com/ipfs/boxo/coreiface/path"
-	"github.com/ipfs/boxo/gateway/assets"
+	ipath "github.com/sevenrats/boxo/coreiface/path"
+	"github.com/sevenrats/boxo/gateway/assets"
 	"github.com/ipfs/go-cid"
 	"github.com/ipld/go-ipld-prime/multicodec"
 	"github.com/ipld/go-ipld-prime/node/basicnode"

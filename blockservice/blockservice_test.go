@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	blockstore "github.com/ipfs/boxo/blockstore"
-	exchange "github.com/ipfs/boxo/exchange"
-	offline "github.com/ipfs/boxo/exchange/offline"
+	blockstore "github.com/sevenrats/boxo/blockstore"
+	exchange "github.com/sevenrats/boxo/exchange"
+	offline "github.com/sevenrats/boxo/exchange/offline"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"

@@ -8,8 +8,8 @@ import (
 	"path"
 	"testing"
 
-	"github.com/ipfs/boxo/ipld/car/v2"
-	"github.com/ipfs/boxo/ipld/car/v2/blockstore"
+	"github.com/sevenrats/boxo/ipld/car/v2"
+	"github.com/sevenrats/boxo/ipld/car/v2/blockstore"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-unixfsnode"

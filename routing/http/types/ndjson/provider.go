@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/ipfs/boxo/routing/http/types"
-	"github.com/ipfs/boxo/routing/http/types/iter"
+	"github.com/sevenrats/boxo/routing/http/types"
+	"github.com/sevenrats/boxo/routing/http/types/iter"
 )
 
 // NewReadProvidersResponseIter returns an iterator that reads Read Provider Records from the given reader.

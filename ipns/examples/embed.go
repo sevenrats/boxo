@@ -3,9 +3,9 @@ package examples
 import (
 	"time"
 
-	pb "github.com/ipfs/boxo/ipns/pb"
+	pb "github.com/sevenrats/boxo/ipns/pb"
 
-	"github.com/ipfs/boxo/ipns"
+	"github.com/sevenrats/boxo/ipns"
 	"github.com/libp2p/go-libp2p/core/crypto"
 )
 

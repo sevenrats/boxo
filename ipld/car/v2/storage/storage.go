@@ -8,12 +8,12 @@ import (
 	"io"
 	"sync"
 
-	carv2 "github.com/ipfs/boxo/ipld/car/v2"
-	"github.com/ipfs/boxo/ipld/car/v2/index"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1/util"
-	internalio "github.com/ipfs/boxo/ipld/car/v2/internal/io"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/store"
+	carv2 "github.com/sevenrats/boxo/ipld/car/v2"
+	"github.com/sevenrats/boxo/ipld/car/v2/index"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1/util"
+	internalio "github.com/sevenrats/boxo/ipld/car/v2/internal/io"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/store"
 	"github.com/ipfs/go-cid"
 	ipldstorage "github.com/ipld/go-ipld-prime/storage"
 )

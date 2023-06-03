@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/ipfs/boxo/routing/http/internal"
-	"github.com/ipfs/boxo/routing/http/types"
-	"github.com/ipfs/boxo/routing/http/types/iter"
+	"github.com/sevenrats/boxo/routing/http/internal"
+	"github.com/sevenrats/boxo/routing/http/types"
+	"github.com/sevenrats/boxo/routing/http/types/iter"
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/libp2p/go-libp2p/core/peer"

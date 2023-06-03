@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	ipath "github.com/ipfs/boxo/coreiface/path"
-	"github.com/ipfs/boxo/gateway/assets"
+	ipath "github.com/sevenrats/boxo/coreiface/path"
+	"github.com/sevenrats/boxo/gateway/assets"
 	cid "github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log"
 	"github.com/libp2p/go-libp2p/core/peer"

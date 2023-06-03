@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/ipfs/boxo/coreiface/path"
-	"github.com/ipfs/boxo/files"
-	"github.com/ipfs/boxo/gateway/assets"
-	"github.com/ipfs/boxo/ipld/unixfs"
+	"github.com/sevenrats/boxo/coreiface/path"
+	"github.com/sevenrats/boxo/files"
+	"github.com/sevenrats/boxo/gateway/assets"
+	"github.com/sevenrats/boxo/ipld/unixfs"
 	"github.com/ipfs/go-cid"
 )
 

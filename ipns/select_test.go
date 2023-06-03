@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	pb "github.com/ipfs/boxo/ipns/pb"
+	pb "github.com/sevenrats/boxo/ipns/pb"
 
 	"github.com/gogo/protobuf/proto"
-	u "github.com/ipfs/boxo/util"
+	u "github.com/sevenrats/boxo/util"
 	ci "github.com/libp2p/go-libp2p/core/crypto"
 )
 

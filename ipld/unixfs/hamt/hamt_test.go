@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	dag "github.com/ipfs/boxo/ipld/merkledag"
-	mdtest "github.com/ipfs/boxo/ipld/merkledag/test"
-	ft "github.com/ipfs/boxo/ipld/unixfs"
+	dag "github.com/sevenrats/boxo/ipld/merkledag"
+	mdtest "github.com/sevenrats/boxo/ipld/merkledag/test"
+	ft "github.com/sevenrats/boxo/ipld/unixfs"
 	ipld "github.com/ipfs/go-ipld-format"
 )
 

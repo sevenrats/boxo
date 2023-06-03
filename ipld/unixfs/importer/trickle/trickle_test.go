@@ -8,14 +8,14 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	ft "github.com/ipfs/boxo/ipld/unixfs"
-	h "github.com/ipfs/boxo/ipld/unixfs/importer/helpers"
-	uio "github.com/ipfs/boxo/ipld/unixfs/io"
+	ft "github.com/sevenrats/boxo/ipld/unixfs"
+	h "github.com/sevenrats/boxo/ipld/unixfs/importer/helpers"
+	uio "github.com/sevenrats/boxo/ipld/unixfs/io"
 
-	chunker "github.com/ipfs/boxo/chunker"
-	merkledag "github.com/ipfs/boxo/ipld/merkledag"
-	mdtest "github.com/ipfs/boxo/ipld/merkledag/test"
-	u "github.com/ipfs/boxo/util"
+	chunker "github.com/sevenrats/boxo/chunker"
+	merkledag "github.com/sevenrats/boxo/ipld/merkledag"
+	mdtest "github.com/sevenrats/boxo/ipld/merkledag/test"
+	u "github.com/sevenrats/boxo/util"
 	ipld "github.com/ipfs/go-ipld-format"
 )
 

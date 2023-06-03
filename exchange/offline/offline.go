@@ -6,8 +6,8 @@ import (
 	"context"
 	"fmt"
 
-	blockstore "github.com/ipfs/boxo/blockstore"
-	exchange "github.com/ipfs/boxo/exchange"
+	blockstore "github.com/sevenrats/boxo/blockstore"
+	exchange "github.com/sevenrats/boxo/exchange"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	ipld "github.com/ipfs/go-ipld-format"

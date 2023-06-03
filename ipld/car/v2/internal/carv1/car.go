@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1/util"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1/util"
 
-	internalio "github.com/ipfs/boxo/ipld/car/v2/internal/io"
-	"github.com/ipfs/boxo/ipld/merkledag"
+	internalio "github.com/sevenrats/boxo/ipld/car/v2/internal/io"
+	"github.com/sevenrats/boxo/ipld/merkledag"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	cbor "github.com/ipfs/go-ipld-cbor"

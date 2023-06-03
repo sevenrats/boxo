@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	carv2 "github.com/ipfs/boxo/ipld/car/v2"
-	"github.com/ipfs/boxo/ipld/car/v2/blockstore"
+	carv2 "github.com/sevenrats/boxo/ipld/car/v2"
+	"github.com/sevenrats/boxo/ipld/car/v2/blockstore"
 	"github.com/ipfs/go-cid"
 )
 

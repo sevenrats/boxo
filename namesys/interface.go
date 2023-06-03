@@ -34,8 +34,8 @@ import (
 
 	"context"
 
-	opts "github.com/ipfs/boxo/coreiface/options/namesys"
-	"github.com/ipfs/boxo/path"
+	opts "github.com/sevenrats/boxo/coreiface/options/namesys"
+	"github.com/sevenrats/boxo/path"
 	ci "github.com/libp2p/go-libp2p/core/crypto"
 )
 

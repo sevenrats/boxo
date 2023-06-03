@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/boxo/ipld/merkledag"
+	"github.com/sevenrats/boxo/ipld/merkledag"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"
@@ -16,10 +16,10 @@ import (
 	"github.com/multiformats/go-multihash"
 	"github.com/stretchr/testify/require"
 
-	carv2 "github.com/ipfs/boxo/ipld/car/v2"
-	"github.com/ipfs/boxo/ipld/car/v2/index"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/store"
+	carv2 "github.com/sevenrats/boxo/ipld/car/v2"
+	"github.com/sevenrats/boxo/ipld/car/v2/index"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/store"
 )
 
 func TestReadOnlyGetReturnsBlockstoreNotFoundWhenCidDoesNotExist(t *testing.T) {

@@ -6,7 +6,7 @@ To create a new IPNS record:
 import (
 	"time"
 
-	ipns "github.com/ipfs/boxo/ipns"
+	ipns "github.com/sevenrats/boxo/ipns"
 	crypto "github.com/libp2p/go-libp2p/core/crypto"
 )
 
@@ -28,4 +28,4 @@ if err != nil {
 
 Once you have the record, you’ll need to use IPFS to *publish* it.
 
-There are several other major operations you can do with `go-ipns`. Check out the [API docs](https://pkg.go.dev/github.com/ipfs/boxo/ipns) or look at the tests in this repo for examples.
+There are several other major operations you can do with `go-ipns`. Check out the [API docs](https://pkg.go.dev/github.com/sevenrats/boxo/ipns) or look at the tests in this repo for examples.

@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/ipfs/boxo/routing/http/server"
-	"github.com/ipfs/boxo/routing/http/types"
-	"github.com/ipfs/boxo/routing/http/types/iter"
+	"github.com/sevenrats/boxo/routing/http/server"
+	"github.com/sevenrats/boxo/routing/http/types"
+	"github.com/sevenrats/boxo/routing/http/types/iter"
 	"github.com/ipfs/go-cid"
 
 	"github.com/libp2p/go-libp2p/core/crypto"

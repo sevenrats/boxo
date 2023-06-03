@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	q "github.com/ipfs/boxo/provider/queue"
+	q "github.com/sevenrats/boxo/provider/queue"
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log"
 	"github.com/libp2p/go-libp2p/core/routing"

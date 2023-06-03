@@ -14,15 +14,15 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ipfs/boxo/coreiface/path"
+	"github.com/sevenrats/boxo/coreiface/path"
 
-	coreiface "github.com/ipfs/boxo/coreiface"
-	"github.com/ipfs/boxo/coreiface/options"
+	coreiface "github.com/sevenrats/boxo/coreiface"
+	"github.com/sevenrats/boxo/coreiface/options"
 
-	"github.com/ipfs/boxo/files"
-	mdag "github.com/ipfs/boxo/ipld/merkledag"
-	"github.com/ipfs/boxo/ipld/unixfs"
-	"github.com/ipfs/boxo/ipld/unixfs/importer/helpers"
+	"github.com/sevenrats/boxo/files"
+	mdag "github.com/sevenrats/boxo/ipld/merkledag"
+	"github.com/sevenrats/boxo/ipld/unixfs"
+	"github.com/sevenrats/boxo/ipld/unixfs/importer/helpers"
 	"github.com/ipfs/go-cid"
 	cbor "github.com/ipfs/go-ipld-cbor"
 	ipld "github.com/ipfs/go-ipld-format"

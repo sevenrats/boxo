@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	carv2 "github.com/ipfs/boxo/ipld/car/v2"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
-	internalio "github.com/ipfs/boxo/ipld/car/v2/internal/io"
+	carv2 "github.com/sevenrats/boxo/ipld/car/v2"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
+	internalio "github.com/sevenrats/boxo/ipld/car/v2/internal/io"
 	"github.com/ipfs/go-cid"
 	"github.com/multiformats/go-varint"
 )

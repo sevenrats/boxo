@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	path "github.com/ipfs/boxo/coreiface/path"
+	path "github.com/sevenrats/boxo/coreiface/path"
 
-	"github.com/ipfs/boxo/files"
+	"github.com/sevenrats/boxo/files"
 
-	coreiface "github.com/ipfs/boxo/coreiface"
-	opt "github.com/ipfs/boxo/coreiface/options"
+	coreiface "github.com/sevenrats/boxo/coreiface"
+	opt "github.com/sevenrats/boxo/coreiface/options"
 )
 
 func (tp *TestSuite) TestName(t *testing.T) {

@@ -7,9 +7,9 @@ import (
 	"math"
 	"os"
 
-	"github.com/ipfs/boxo/ipld/car/v2/index"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/loader"
+	"github.com/sevenrats/boxo/ipld/car/v2/index"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/loader"
 	"github.com/ipfs/go-cid"
 	ipld "github.com/ipld/go-ipld-prime"
 	"github.com/ipld/go-ipld-prime/datamodel"

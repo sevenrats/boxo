@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	coreiface "github.com/ipfs/boxo/coreiface"
-	opt "github.com/ipfs/boxo/coreiface/options"
-	"github.com/ipfs/boxo/coreiface/path"
+	coreiface "github.com/sevenrats/boxo/coreiface"
+	opt "github.com/sevenrats/boxo/coreiface/options"
+	"github.com/sevenrats/boxo/coreiface/path"
 	ipld "github.com/ipfs/go-ipld-format"
 
 	mh "github.com/multiformats/go-multihash"

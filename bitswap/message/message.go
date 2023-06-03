@@ -5,15 +5,15 @@ import (
 	"errors"
 	"io"
 
-	"github.com/ipfs/boxo/bitswap/client/wantlist"
-	pb "github.com/ipfs/boxo/bitswap/message/pb"
+	"github.com/sevenrats/boxo/bitswap/client/wantlist"
+	pb "github.com/sevenrats/boxo/bitswap/message/pb"
 
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	pool "github.com/libp2p/go-buffer-pool"
 	msgio "github.com/libp2p/go-msgio"
 
-	u "github.com/ipfs/boxo/util"
+	u "github.com/sevenrats/boxo/util"
 	"github.com/libp2p/go-libp2p/core/network"
 )
 

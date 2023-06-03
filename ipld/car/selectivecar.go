@@ -8,7 +8,7 @@ import (
 	"io"
 	"math"
 
-	util "github.com/ipfs/boxo/ipld/car/util"
+	util "github.com/sevenrats/boxo/ipld/car/util"
 	cid "github.com/ipfs/go-cid"
 	"github.com/ipld/go-ipld-prime"
 	cidlink "github.com/ipld/go-ipld-prime/linking/cid"

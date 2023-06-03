@@ -13,11 +13,11 @@ import (
 	cidlink "github.com/ipld/go-ipld-prime/linking/cid"
 	"github.com/libp2p/go-libp2p/core/routing"
 
-	blocks "github.com/ipfs/boxo/blockstore"
-	"github.com/ipfs/boxo/fetcher"
-	fetcherhelpers "github.com/ipfs/boxo/fetcher/helpers"
-	pin "github.com/ipfs/boxo/pinning/pinner"
-	"github.com/ipfs/boxo/verifcid"
+	blocks "github.com/sevenrats/boxo/blockstore"
+	"github.com/sevenrats/boxo/fetcher"
+	fetcherhelpers "github.com/sevenrats/boxo/fetcher/helpers"
+	pin "github.com/sevenrats/boxo/pinning/pinner"
+	"github.com/sevenrats/boxo/verifcid"
 )
 
 var logR = logging.Logger("reprovider.simple")

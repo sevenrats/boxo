@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	pb "github.com/ipfs/boxo/ipns/pb"
-	u "github.com/ipfs/boxo/util"
+	pb "github.com/sevenrats/boxo/ipns/pb"
+	u "github.com/sevenrats/boxo/util"
 	ipldcodec "github.com/ipld/go-ipld-prime/multicodec"
 	basicnode "github.com/ipld/go-ipld-prime/node/basic"
 	"github.com/libp2p/go-libp2p/core/crypto"

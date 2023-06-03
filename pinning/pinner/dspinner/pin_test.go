@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	bs "github.com/ipfs/boxo/blockservice"
-	mdag "github.com/ipfs/boxo/ipld/merkledag"
+	bs "github.com/sevenrats/boxo/blockservice"
+	mdag "github.com/sevenrats/boxo/ipld/merkledag"
 
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
@@ -19,11 +19,11 @@ import (
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
 
-	blockstore "github.com/ipfs/boxo/blockstore"
-	offline "github.com/ipfs/boxo/exchange/offline"
-	util "github.com/ipfs/boxo/util"
+	blockstore "github.com/sevenrats/boxo/blockstore"
+	offline "github.com/sevenrats/boxo/exchange/offline"
+	util "github.com/sevenrats/boxo/util"
 
-	ipfspin "github.com/ipfs/boxo/pinning/pinner"
+	ipfspin "github.com/sevenrats/boxo/pinning/pinner"
 )
 
 var rand = util.NewTimeSeededRand()

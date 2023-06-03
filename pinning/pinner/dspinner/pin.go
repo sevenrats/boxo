@@ -18,10 +18,10 @@ import (
 	"github.com/polydawn/refmt/cbor"
 	"github.com/polydawn/refmt/obj/atlas"
 
-	"github.com/ipfs/boxo/ipld/merkledag"
-	"github.com/ipfs/boxo/ipld/merkledag/dagutils"
-	ipfspinner "github.com/ipfs/boxo/pinning/pinner"
-	"github.com/ipfs/boxo/pinning/pinner/dsindex"
+	"github.com/sevenrats/boxo/ipld/merkledag"
+	"github.com/sevenrats/boxo/ipld/merkledag/dagutils"
+	ipfspinner "github.com/sevenrats/boxo/pinning/pinner"
+	"github.com/sevenrats/boxo/pinning/pinner/dsindex"
 )
 
 const (

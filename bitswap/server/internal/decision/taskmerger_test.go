@@ -3,8 +3,8 @@ package decision
 import (
 	"testing"
 
-	"github.com/ipfs/boxo/bitswap/internal/testutil"
-	"github.com/ipfs/boxo/internal/test"
+	"github.com/sevenrats/boxo/bitswap/internal/testutil"
+	"github.com/sevenrats/boxo/internal/test"
 	"github.com/ipfs/go-peertaskqueue"
 	"github.com/ipfs/go-peertaskqueue/peertask"
 )

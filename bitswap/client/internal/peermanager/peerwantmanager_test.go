@@ -3,8 +3,8 @@ package peermanager
 import (
 	"testing"
 
-	"github.com/ipfs/boxo/bitswap/internal/testutil"
-	"github.com/ipfs/boxo/internal/test"
+	"github.com/sevenrats/boxo/bitswap/internal/testutil"
+	"github.com/sevenrats/boxo/internal/test"
 	cid "github.com/ipfs/go-cid"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 )

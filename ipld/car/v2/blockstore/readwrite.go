@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"os"
 
-	blockstore "github.com/ipfs/boxo/blockstore"
+	blockstore "github.com/sevenrats/boxo/blockstore"
 	blocks "github.com/ipfs/go-block-format"
 	"github.com/ipfs/go-cid"
 
-	carv2 "github.com/ipfs/boxo/ipld/car/v2"
-	"github.com/ipfs/boxo/ipld/car/v2/index"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/carv1/util"
-	internalio "github.com/ipfs/boxo/ipld/car/v2/internal/io"
-	"github.com/ipfs/boxo/ipld/car/v2/internal/store"
+	carv2 "github.com/sevenrats/boxo/ipld/car/v2"
+	"github.com/sevenrats/boxo/ipld/car/v2/index"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/carv1/util"
+	internalio "github.com/sevenrats/boxo/ipld/car/v2/internal/io"
+	"github.com/sevenrats/boxo/ipld/car/v2/internal/store"
 )
 
 var _ blockstore.Blockstore = (*ReadWrite)(nil)

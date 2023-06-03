@@ -5,9 +5,9 @@ import (
 	"context"
 	"testing"
 
-	car "github.com/ipfs/boxo/ipld/car"
-	"github.com/ipfs/boxo/ipld/merkledag"
-	dstest "github.com/ipfs/boxo/ipld/merkledag/test"
+	car "github.com/sevenrats/boxo/ipld/car"
+	"github.com/sevenrats/boxo/ipld/merkledag"
+	dstest "github.com/sevenrats/boxo/ipld/merkledag/test"
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	format "github.com/ipfs/go-ipld-format"

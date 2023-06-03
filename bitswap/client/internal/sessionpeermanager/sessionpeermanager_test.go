@@ -4,8 +4,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ipfs/boxo/bitswap/internal/testutil"
-	"github.com/ipfs/boxo/internal/test"
+	"github.com/sevenrats/boxo/bitswap/internal/testutil"
+	"github.com/sevenrats/boxo/internal/test"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 )
 

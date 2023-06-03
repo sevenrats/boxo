@@ -16,9 +16,9 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	pb "github.com/ipfs/boxo/ipns/pb"
+	pb "github.com/sevenrats/boxo/ipns/pb"
 
-	u "github.com/ipfs/boxo/util"
+	u "github.com/sevenrats/boxo/util"
 	ic "github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/peer"
 )
@@ -164,7 +164,7 @@ func Validate(pk ic.PubKey, entry *pb.IpnsEntry) error {
 	// TODO: If we switch from pb.IpnsEntry to a more generic IpnsRecord type then perhaps we should only check
 	// this if there is no v1 signature. In the meanwhile this helps avoid some potential rough edges around people
 	// checking the entry fields instead of doing CBOR decoding everywhere.
-	// See https://github.com/ipfs/boxo/ipns/pull/42 for next steps here
+	// See https://github.com/sevenrats/boxo/ipns/pull/42 for next steps here
 	if err := validateCborDataMatchesPbData(entry); err != nil {
 		return err
 	}
