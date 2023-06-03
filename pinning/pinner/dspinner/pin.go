@@ -676,7 +676,7 @@ func (p *pinner) RecursiveKeys(ctx context.Context) <-chan ipfspinner.StreamedCi
 
 // RecursiveKeys returns a slice containing the recursively pinned keys
 func (p *pinner) RecursiveKeysFromString(ctx context.Context, s string) <-chan ipfspinner.StreamedCid {
-	return p.streamIndex(ctx, p.cidRIndex, s)
+	return p.streamIndexFromString(ctx, p.cidRIndex, s)
 }
 
 func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan ipfspinner.StreamedCid {
@@ -713,7 +713,7 @@ func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan 
 
 	return out
 }
-func (p *pinner) streamIndexOfCid(ctx context.Context, index dsindex.Indexer, s cid.Cid) <-chan ipfspinner.StreamedCid {
+func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexer, s cid.Cid) <-chan ipfspinner.StreamedCid {
 	out := make(chan ipfspinner.StreamedCid)
 
 	go func() {
