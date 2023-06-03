@@ -679,6 +679,30 @@ func (p *pinner) RecursiveKeysFromString(ctx context.Context, s string) <-chan i
 	return p.streamIndexFromString(ctx, p.cidRIndex, s)
 }
 
+func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexer, s string) <-chan ipfspinner.StreamedCid {
+	out := make(chan ipfspinner.StreamedCid)
+
+	go func() {
+		defer close(out)
+
+		p.lock.RLock()
+		defer p.lock.RUnlock()
+		c, err := cid.Cast([]byte(s))
+		if err != nil {
+			out <- ipfspinner.StreamedCid{Err: err}
+			return
+		}
+		select {
+		case <-ctx.Done():
+			out <- ipfspinner.StreamedCid{Err: err}
+			return
+		case out <- ipfspinner.StreamedCid{C: c}:
+		}		
+	}()
+
+	return out
+}
+
 func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan ipfspinner.StreamedCid {
 	out := make(chan ipfspinner.StreamedCid)
 
@@ -709,32 +733,6 @@ func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan 
 		if err != nil {
 			out <- ipfspinner.StreamedCid{Err: err}
 		}
-	}()
-
-	return out
-}
-func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexer, s string) <-chan ipfspinner.StreamedCid {
-	out := make(chan ipfspinner.StreamedCid)
-
-	go func() {
-		defer close(out)
-
-		p.lock.RLock()
-		defer p.lock.RUnlock()
-		v, err := index.Search(ctx, s)
-		if err != nil {
-			out <- ipfspinner.StreamedCid{Err: err}
-			return
-		}
-		c, err := cid.Parse(v[0])
-		if len(v) == 1 {
-			select {
-			case <-ctx.Done():
-				out <- ipfspinner.StreamedCid{Err: err}
-				return
-			case out <- ipfspinner.StreamedCid{C: c}:
-			}
-		}			
 	}()
 
 	return out
