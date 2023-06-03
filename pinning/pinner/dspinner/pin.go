@@ -666,12 +666,12 @@ func (p *pinner) loadPin(ctx context.Context, pid string) (*pin, error) {
 
 // DirectKeys returns a slice containing the directly pinned keys
 func (p *pinner) DirectKeys(ctx context.Context) <-chan ipfspinner.StreamedCid {
-	return p.streamIndex(ctx, p.cidDIndex, nil)
+	return p.streamIndex(ctx, p.cidDIndex)
 }
 
 // RecursiveKeys returns a slice containing the recursively pinned keys
 func (p *pinner) RecursiveKeys(ctx context.Context) <-chan ipfspinner.StreamedCid {
-	return p.streamIndex(ctx, p.cidRIndex, nil)
+	return p.streamIndex(ctx, p.cidRIndex)
 }
 
 // RecursiveKeys returns a slice containing the recursively pinned keys
@@ -713,7 +713,7 @@ func (p *pinner) streamIndex(ctx context.Context, index dsindex.Indexer) <-chan 
 
 	return out
 }
-func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexer, s cid.Cid) <-chan ipfspinner.StreamedCid {
+func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexer, s string) <-chan ipfspinner.StreamedCid {
 	out := make(chan ipfspinner.StreamedCid)
 
 	go func() {
@@ -723,7 +723,7 @@ func (p *pinner) streamIndexFromString(ctx context.Context, index dsindex.Indexe
 		defer p.lock.RUnlock()
 
 		if s != nil {
-			c, err := cid.Cast([]byte(s))
+			c, err := cid.Parse(s)
 			v, _ = index.Search(c, nil)
 			if err != nil {
 				out <- ipfspinner.StreamedCid{Err: err}
